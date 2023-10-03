@@ -122,6 +122,8 @@ sectionC p{
     flex-direction: row;
     align-items: center;
     height: 5rem;
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 15px;
     width: 80%;
 }
 sectionD {
