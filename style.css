@@ -81,6 +81,7 @@ sectionC ul1{
     display: flex;
     text-align: start;
     justify-content: start;
+    background-color: rgba(255, 255, 255, 0.301);
     font-weight: bold;
     flex-direction: column;
     list-style-image: url(/imagens/favicon.ico)    
