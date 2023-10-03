@@ -81,11 +81,13 @@ sectionC ul1{
     display: flex;
     text-align: start;
     justify-content: start;
+    font-weight: bold;
     flex-direction: column;
     list-style-image: url(/imagens/favicon.ico)    
 }
 sectionC ul2{
     display: flex;
+    font-weight: bold;
     text-align: start;
     flex-direction: column;
     list-style-image: url(/imagens/favicon.ico)    
@@ -101,7 +103,7 @@ sectionC{
     align-items: center;
     width: 90%;
     height: 480px;
-     font-weight: bold;
+    font-weight: bold;
     border-radius: 18px;
     flex-direction: column;
     background-image: url("https://i.pinimg.com/originals/ac/86/b5/ac86b5bffc63d263edcd3b97f4105dbd.gif"); 
