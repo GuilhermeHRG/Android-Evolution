@@ -81,6 +81,7 @@ sectionC ul1{
     display: flex;
     text-align: start;
     justify-content: start;
+    padding: 5px;
     background-color: rgba(255, 255, 255, 0.404);
     border-radius: 15px;
     font-weight: bold;
@@ -90,6 +91,7 @@ sectionC ul1{
 sectionC ul2{
     display: flex;
     font-weight: bold;
+    padding: 5px;
     text-align: start;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.404);
