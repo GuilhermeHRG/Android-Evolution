@@ -81,7 +81,8 @@ sectionC ul1{
     display: flex;
     text-align: start;
     justify-content: start;
-    background-color: rgba(255, 255, 255, 0.301);
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 15px;
     font-weight: bold;
     flex-direction: column;
     list-style-image: url(/imagens/favicon.ico)    
@@ -91,6 +92,8 @@ sectionC ul2{
     font-weight: bold;
     text-align: start;
     flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 15px;
     list-style-image: url(/imagens/favicon.ico)    
 }
 .lista{
