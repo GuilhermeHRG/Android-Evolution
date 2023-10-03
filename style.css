@@ -101,7 +101,7 @@ sectionC ul2{
 .lista{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 40%;
 }
 sectionC{
     display: flex;
