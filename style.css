@@ -20,7 +20,7 @@
     --fonte-body: 'Courier New', Courier, monospace;
 }
 
-/* Media query para esquema de cores escuro */
+/* Media query para esquema de cores escuro
 @media (prefers-color-scheme: dark) {
     :root {
         --cor-fundo-saudacao: #ffffff;
@@ -28,7 +28,7 @@
         --cor-fundo-main: #025316;
         --cor-fundo-body: linear-gradient(to bottom, #025316, rgb(202, 235, 218));
     }
-}
+} */
 
 /* Resto do seu CSS usando as variáveis */
 /* ... */
