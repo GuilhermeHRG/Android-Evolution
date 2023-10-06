@@ -1,113 +1,166 @@
-*{
+/* Variáveis de cores */
+:root {
+    --cor-fundo-body: linear-gradient(to bottom, #c8f8d4, rgb(25, 83, 54));
+    --cor-fundo-saudacao: #333;
+    --cor-texto-saudacao: #fff;
+    --cor-fundo-botao-hover: #007bff;
+    --cor-fundo-header: linear-gradient(to bottom, #84f3a0, #23553d);
+    --cor-texto-header: #fff;
+    --cor-fundo-main: aliceblue;
+    --cor-texto-main: black;
+    --cor-fundo-iframe: #035016;
+    --cor-fundo-lista: rgba(255, 255, 255, 0.404);
+    --cor-texto-lista: #000; /* Cor do texto da lista */
+    --cor-fundo-footer: rgb(25, 83, 54);
+    --cor-texto-footer: #fff;
+}
+
+/* Variáveis de fontes */
+:root {
+    --fonte-body: 'Courier New', Courier, monospace;
+}
+
+/* Estilos globais */
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+/* Estilos para o corpo da página */
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #c8f8d4, rgb(25, 83, 54));
+    background: var(--cor-fundo-body);
     text-align: center;
-    font-family:'Courier New', Courier, monospace;
+    font-family: var(--fonte-body);
 }
-button:hover{
+
+/* Estilos para o botão (hover) */
+button:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-h3{
+
+/* Estilos para o cabeçalho */
+h3 {
     display: flex;
     padding-left: 10px;
     align-items: center;
     font-size: 28px;
     width: 90%;
     border-radius: 8px;
-    color: white;
-    background: linear-gradient(to left,aliceblue, rgb(25, 83, 54));
+    color: var(--cor-texto-saudacao);
+    background: linear-gradient(to left, aliceblue, rgb(25, 83, 54));
     margin: 30px;
 }
-strong{
-    color: #0a9c2e;
+
+/* Estilos para texto forte */
+strong {
+    color: var(--cor-fundo-header);
 }
-img{
- border-radius: 18px;
- margin: 20px;
+
+/* Estilos para imagens */
+img {
+    border-radius: 18px;
+    margin: 20px;
 }
-iframe{
+
+/* Estilos para iframes */
+iframe {
     border-radius: 8px;
     margin: 10px;
 }
-p{
+
+/* Estilos para parágrafos */
+p {
     margin: 30px;
     text-align: justify;
 }
-.header{
+
+/* Estilos para o cabeçalho da seção */
+.header {
     display: flex;
     flex-direction: column;
-    
-    color: aliceblue;
-    background: linear-gradient(to bottom, #84f3a0, #23553d);
+    color: var(--cor-texto-header);
+    background: var(--cor-fundo-header);
     width: 100%;
     height: 50%;
 }
-.nav{
+
+/* Estilos para a navegação */
+.nav {
     display: flex;
     justify-content: start;
-    color: white;
+    color: var(--cor-texto-header);
     margin-left: 20px;
     margin-top: 10px;
     gap: 10px;
     flex-direction: row;
 }
-.nav button{
-    color: white;
+
+.nav button {
+    color: var(--cor-texto-header);
     border: none;
     font-weight: bolder;
-    background-color:rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
-.main{
+
+/* Estilos para a seção principal */
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
-    color: black;
+    background-color: var(--cor-fundo-main);
+    color: var(--cor-texto-main);
     flex-direction: column;
     width: 80%;
     margin-top: 10px;
     border-radius: 15px;
     margin-bottom: 10px;
 }
-.iframeStyle{
+
+/* Estilos para o iframe */
+.iframeStyle {
     width: 100%;
-    background-color: #035016;
+    background-color: var(--cor-fundo-iframe);
 }
-sectionC ul1{
+
+/* Estilos para a primeira lista */
+sectionC ul1 {
     display: flex;
     text-align: start;
     justify-content: start;
     padding: 5px;
-    background-color: rgba(255, 255, 255, 0.404);
+    background-color: var(--cor-fundo-lista);
     border-radius: 15px;
     font-weight: bold;
     flex-direction: column;
-    list-style-image: url(/imagens/favicon.ico)    
+    list-style-image: url(/imagens/favicon.ico);
 }
-sectionC ul2{
+
+/* Estilos para a segunda lista */
+sectionC ul2 {
     display: flex;
     font-weight: bold;
     padding: 5px;
     text-align: start;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.404);
+    background-color: var(--cor-fundo-lista);
     border-radius: 15px;
-    list-style-image: url(/imagens/favicon.ico)    
+    list-style-image: url(/imagens/favicon.ico);
 }
-.lista{
+
+/* Estilos para a lista */
+.lista {
     display: flex;
     flex-direction: row;
     gap: 22rem;
 }
-sectionC{
+
+/* Estilos para a seção C */
+sectionC {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,46 +169,52 @@ sectionC{
     font-weight: bold;
     border-radius: 18px;
     flex-direction: column;
-    background-image: url("https://i.pinimg.com/originals/ac/86/b5/ac86b5bffc63d263edcd3b97f4105dbd.gif"); 
+    background-image: url("https://i.pinimg.com/originals/ac/86/b5/ac86b5bffc63d263edcd3b97f4105dbd.gif");
     background-position: center;
     background-position-y: 20px;
     background-size: cover;
-    color: white;
+    color: var(--cor-texto-saudacao);
 }
-sectionC p{
+
+sectionC p {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     height: 5rem;
-    background-color: rgba(255, 255, 255, 0.404);
+    background-color: var(--cor-fundo-lista);
     border-radius: 8px;
     padding: 5px;
     width: 80%;
 }
+
+/* Estilos para a seção D */
 sectionD {
     margin: 10px;
 }
-h1{
+
+h1 {
     font-size: 38px;
     margin: 20px;
     font-weight: bold;
 }
 
-footer{
+/* Estilos para o rodapé */
+footer {
     display: flex;
     width: 100%;
-    color: aliceblue;
+    color: var(--cor-texto-footer);
     text-align: center;
     padding: 5px;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 0;
-    background-color: rgb(25, 83, 54);
+    background-color: var(--cor-fundo-footer);
     justify-content: center;
     align-items: center;
 }
-footer img{
+
+footer img {
     width: 50px;
     height: 50px;
 }
