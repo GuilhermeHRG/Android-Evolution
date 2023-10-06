@@ -15,6 +15,14 @@
     --cor-texto-footer: #fff;
 }
 
+@media (prefers-color-shceme: dark){
+    :root{
+        --cor-fundo-saudacao: #ffffff;
+        --cor-fundo-main: rgb(0, 130, 243);
+        --cor-fundo-body: linear-gradient(to bottom, #025316, rgb(202, 235, 218));
+    }
+}
+
 /* Variáveis de fontes */
 :root {
     --fonte-body: 'Courier New', Courier, monospace;
