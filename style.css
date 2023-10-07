@@ -65,7 +65,11 @@
         background: linear-gradient(to left, aliceblue, rgb(25, 83, 54));
         margin: 30px;
     }
-
+    img {
+        border-radius: 18px;
+        margin: 20px;
+        width: 100%;
+    }
 
 }
 
